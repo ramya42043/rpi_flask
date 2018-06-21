@@ -1,0 +1,14 @@
+{% extends 'home.html' %}
+{% block container %}
+	<div class="tests">
+	    <form action="/testcases" method="post">
+		{% for k,v in tcases.items() %}
+			<input type="checkbox" name="Testcase" value={{k}}>{{ k }}=> {{v }}</a></br>
+		{% endfor %}
+		<div class="rc">
+			<input type="submit" value="Run All">
+			<input type="submit" value="Configure">
+		</div>
+	    </form>
+	</div>
+{% endblock %}

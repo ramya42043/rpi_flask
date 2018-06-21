@@ -1,0 +1,23 @@
+{% extends "home.html" %}	
+{% block container %}
+	<div class="pad">
+				<table style="width:100%">
+					 <tr>
+						<th>Testcase</th> 
+						<th>Result</th>
+					</tr>
+
+				{% for j in t_results %}
+					{% for k in j %}
+					
+						<tr>
+							<td>{{ k }}</td>
+							<td>{{ j[k] }}</td>
+						</tr>
+					{% endfor %}
+			
+				{% endfor %}
+				</table>
+	</div>
+
+{% endblock %}

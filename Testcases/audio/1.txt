@@ -1,0 +1,3 @@
+PASS
+Error:Your GStreamer installation is missing a plug-in.
+Error:Internal data stream error.

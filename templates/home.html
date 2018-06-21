@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/check.css') }}">
+</head>
+<body>
+<div class="sidenav">
+<a href="{{ url_for('return_home') }}">Home</a>
+<a href="{{ url_for('return_audio') }}">Audio</a>
+<a href="{{ url_for('return_video') }}">Video</a>
+<a href="{{ url_for('return_camera') }}">Camera</a>
+<a href="display.html">Display</a>
+<a href="{{ url_for('return_results') }}">Test Results</a>
+</div>
+<div class="main">
+<h2>AVCD Automation</h2>
+</div>
+<div class="container">
+{% block container %}{% endblock %}
+</div>
+</body>
+</html> 
